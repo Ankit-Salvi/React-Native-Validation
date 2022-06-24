@@ -1,31 +1,28 @@
 {
-  "name": "myproject",
+  "name": "PouchAlbum",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint ."
+    "postinstall": "cd nodeproj && npm install",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
-    "expo": "^45.0.5",
-    "nodejs-mobile-react-native": "^0.8.1",
-    "react": "17.0.2",
-    "react-dom": "^18.1.0",
-    "react-native": "^0.68.2",
-    "react-native-web": "0.17.7",
-    "react-native-webview": "^11.22.2"
+    "buffer": "5.0.6",
+    "react": "16.0.0-alpha.6",
+    "react-native": "^0.69.0",
+    "react-native-fetch-blob": "0.10.5",
+    "react-native-progress": "3.2.1",
+    "react-native-prompt": "1.0.0",
+    "react-native-rest-client": "0.1.1",
+    "react-native-uuid": "1.4.9",
+    "react-navigation": "1.0.0-beta.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/runtime": "^7.12.5",
-    "babel-jest": "^26.6.3",
-    "eslint": "^7.32.0",
-    "jest": "^26.6.3",
-    "metro-react-native-babel-preset": "^0.67.0",
-    "react-test-renderer": "17.0.2"
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "1.9.2",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.6"
   },
   "jest": {
     "preset": "react-native"
